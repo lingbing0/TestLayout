@@ -42,6 +42,12 @@
     cell.testLabel.text = self.dataArray[indexPath.item];
     return cell;
 }
+//解决iOS 8 上不能自动布局的问题
+- (BOOL) shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{
+    return YES;
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

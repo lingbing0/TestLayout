@@ -52,5 +52,9 @@
     layoutAttributes.frame = cellFrame;
     return layoutAttributes;
 }
+// 返回特定的高
+//-(UICollectionViewLayoutAttributes *) preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes { [super preferredLayoutAttributesFittingAttributes:layoutAttributes]; UICollectionViewLayoutAttributes *attributes = [layoutAttributes copy]; attributes.size = CGSizeMake(80, 80);
+//    return attributes;
+//}
 
 @end
